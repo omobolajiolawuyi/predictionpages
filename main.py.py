@@ -39,14 +39,14 @@ if (selected == 'Based on Test Results'):
     cp = st.text_input('Chest Pain type: 1: typical angina, 2: atypical angina, 3: non-anginal pain, 4: asymptomatic')
     trestbps = st.text_input('Resting blood pressure (in mm Hg)')
     chol = st.text_input('Cholesterol in mg/dl fetched via BMI sensor')
-    fbs = st.text_input('Fasting blood sugar > 120 mg/dl') 
+    fbs = st.text_input('Fasting blood sugar > 120 mg/dl = 1, otherwise = 0') 
     restecg = st.text_input('Resting electrocardiographic results: 0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy by Estes criteria')
     thalach = st.text_input('Maximum heart rate achieved')
     exang = st.text_input('Exercise-induced angina: Yes=1, No=0') 
     oldpeak = st.text_input('ST depression induced by exercise relative to rest')
     slope = st.text_input('The slope of the peak exercise ST segment (Value 1: upsloping, Value 2: flat, Value 3: downsloping)')
-    ca = st.text_input('Number of major vessels (0-3)') 
-    thal =st.text_input('A blood disorder called thalassemia (3 = normal; 6 = fixed defect; 7 = reversable defect)')
+    ca = st.text_input('Number of major vessels (0-4)') 
+    thal =st.text_input('A blood disorder called thalassemia (1 = normal; 2 = fixed defect; 3 = reversable defect)')
     
     
     #code forr Prediction
