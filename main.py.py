@@ -57,7 +57,7 @@ if (selected == 'Based on Test Results'):
     if st.button('Heart Disease Prognosis'):
         prediction = loaded_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
         
-        if (prediction[0] == 0):
+        if (prediction[0] == 1):
             Diagnosis = 'The patient does not have a heart disease'
         else:
             Diagnosis = 'The patient has heart a disease'
