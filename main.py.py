@@ -99,7 +99,7 @@ if (selected == 'Based on Lifestyle'):
     if st.button('Heart Disease Risk'):
         Risk_prediction = risk_loaded_model.predict([[BMI, Smoking, AlcoholDrinking, Stroke, PhysicalHealth, MentalHealth, DiffWalking, Sex, AgeCategory, Race, Diabetic, PhysicalActivity, GenHealth, SleepTime, Asthma, KidneyDisease, SkinCancer]])
         
-        if (Risk_prediction[0] == 1):
+        if (Risk_prediction[0] == 0):
             Risk = 'The patient is not at risk of developing a heart disease'
         else:
             Risk = 'The patient is at risk of having a developing disease'
